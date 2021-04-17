@@ -4,24 +4,25 @@
 <head>
     <title>Chapter 1</title>
     <link rel="stylesheet" href="css/gameStyle.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/frameScript.js"></script>
     <script src="js/gameScript.js"></script>
 </head>
 
 <body id="gameBody">
-    <div id="storyBox">
-        Story to provide context to the dialogue.
-    </div>
+    <div id="storyBox"></div>
     <div id="bubbles">
         <blockquote class="speech bubble main">
-            <div class="primaryContent">Main character dialogue.</div>
+            <div class="primaryContent"></div>
         </blockquote>
         <div id="choiceButtons">
-            <button class="choiceButton" id="firstChoice" type="button">Choice1</button>
-            <button class="choiceButton" id="secondChoice" type="button">Choice2</button>
+            <button class="choiceButton" id="firstChoice" type="button"></button>
+            <button class="choiceButton" id="secondChoice" type="button"></button>
         </div>
         <blockquote class="speech bubble secondary">
-            <div class="secondaryContent">Secondary character dialogue.</div>
+            <div class="secondaryContent"></div>
         </blockquote>
     </div>
 </body>
