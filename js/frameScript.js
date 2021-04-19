@@ -49,12 +49,6 @@ function fetchDataAndUpdateFrame(section) {
                 $("#storyBox").html(myData.story);
                 $("#storyBox").css('visibility', 'visible');
             }
-            if (myData.time) {
-                $('#gameBody').fadeTo(myData.time * 1000, 0, function() {
-                    $('#gameBody').css("opacity", 1);
-                    fetchDataAndUpdateFrame(myData.next);
-                });
-            }
         }
     }).catch(function(error) {
         console.log(error);
