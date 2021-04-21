@@ -1,4 +1,4 @@
-/*Start button styling begin*/
+/*Start button styling begin. Original source = https://codepen.io/kocsten/pen/rggjXp */
 
 #centerButtonDiv {
     display: flex;
@@ -83,7 +83,7 @@
 /*Start button styling end*/
 
 
-/*Speech bubbles styling begin*/
+/*Speech bubbles styling begin. Original source = https://codepen.io/dudleystorey/pen/wMLBLK */
 
 blockquote.bubble {
     background-position: center;
@@ -120,10 +120,10 @@ blockquote.speech {
 }
 
 
-/*Speech bubbles styling begin*/
+/*Speech bubbles styling end*/
 
 
-/*Choice buttons styling begin*/
+/*Choice buttons styling begin. Original source = https://codepen.io/giana/pen/BZaGyP */
 
 .choiceButton {
     width: 350px;
@@ -177,7 +177,7 @@ h1 {
 }
 
 
-/*Star Wars prologue effect*/
+/*Star Wars prologue effect begin. Original source = https://css-tricks.com/snippets/css/star-wars-crawl-text/ */
 
 .fade {
     position: relative;
@@ -230,6 +230,9 @@ h1 {
         transform: rotateX(25deg) translateZ(-2500px);
     }
 }
+
+
+/*Star Wars prologue effect end*/
 
 * {
     box-sizing: border-box;
