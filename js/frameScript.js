@@ -23,6 +23,18 @@ function fetchDataAndUpdateFrame(section) {
             $(".main").css('visibility', 'hidden');
             $("#storyBox").css('visibility', 'hidden');
             $("#gameBody").css("backgroundImage", "url(images/" + myData.background + ")");
+            if (section == "21111") {
+                $("#win").css('visibility', 'visible');
+                $("#wrap").css('visibility', 'visible');
+                init();
+            } else {
+                $("#win").css('visibility', 'hidden');
+                $("#wrap").css('visibility', 'hidden');
+            }
+            if (myData.music) {
+                $("#titleSong")[0].attr('src', "music/" + myData.music);
+                $("#titleSong")[0].play();
+            }
             if (myData.first) {
                 $("#firstChoice").click(function() {
                     fetchDataAndUpdateFrame(myData.first[1]);

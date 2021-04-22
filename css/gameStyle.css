@@ -95,6 +95,15 @@ blockquote.bubble {
     line-height: 1;
 }
 
+blockquote.whisper {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg);
+    width: 25%;
+    font-size: 2vw;
+    color: #ccc;
+    font-style: italic;
+    padding: 6% 5% 15%;
+}
+
 blockquote.speech {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
     width: 25%;
@@ -207,7 +216,7 @@ h1 {
     position: relative;
     top: -100;
     transform-origin: 50% 100%;
-    animation: crawl 10s linear;
+    animation: crawl 55s linear;
 }
 
 .crawl>.title {
@@ -233,6 +242,48 @@ h1 {
 
 
 /*Star Wars prologue effect end*/
+
+
+/*Hacking Minigame start. Original source = https://codepen.io/inwepo/pen/ibduF */
+
+.ring {
+    position: absolute;
+    left: 950px;
+    top: 300px;
+    transform-origin: 18px 200px;
+    -webkit-transform-origin: 18px 200px;
+}
+
+.seg {
+    position: absolute;
+    width: 36px;
+    height: 20px;
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.long {
+    height: 60px;
+}
+
+#win {
+    position: absolute;
+    left: 948px;
+    top: 480px;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #FFAA00;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 1);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+
+/*Hacking Minigame end*/
 
 * {
     box-sizing: border-box;
