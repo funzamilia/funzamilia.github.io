@@ -11,6 +11,8 @@ firebase.initializeApp(firebaseConfig);
 
 var firestore = firebase.firestore();
 
+var lastSong = "";
+
 const collectionRef = firestore.collection("sections");
 
 function fetchDataAndUpdateFrame(section) {
@@ -31,17 +33,20 @@ function fetchDataAndUpdateFrame(section) {
                 $("#win").css('visibility', 'hidden');
                 $("#wrap").css('visibility', 'hidden');
             }
-            if (myData.music) {
-                $("#titleSong")[0].attr('src', "music/" + myData.music);
+            if (myData.music && (lastSong != myData.music)) {
+                lastSong = myData.music;
+                $("#titleSong").attr('src', "music/" + myData.music);
                 $("#titleSong")[0].play();
             }
             if (myData.first) {
+                $("#firstChoice").off('click');
                 $("#firstChoice").click(function() {
                     fetchDataAndUpdateFrame(myData.first[1]);
                 });
                 $("#firstChoice").html(myData.first[0]);
                 $("#firstChoice").css('visibility', 'visible');
                 if (myData.second) {
+                    $("#secondChoice").off('click');
                     $("#secondChoice").click(function() {
                         fetchDataAndUpdateFrame(myData.second[1]);
                     });
